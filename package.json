@@ -1,0 +1,19 @@
+{
+  "name": "gcp-iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "mqtt": "^3.0.0",
+    "request": "^2.88.0",
+    "retry-request": "^4.1.1",
+    "yargs": "^13.3.0"
+  }
+}
