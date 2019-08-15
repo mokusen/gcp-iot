@@ -38,7 +38,7 @@ function mqttPublish(authTokenJwt) {
             console.log('Client not connected...');
         } else {
             setInterval(() => {
-                exec('python3 /home/pi/open/temp/gettemp_gcp.py', (error, stdout, stderr) => {
+                exec('python3 ./python/gettemp_gcp.py', (error, stdout, stderr) => {
                     if (error !== null) {
                         console.log('exec error: ' + error)
                         return
@@ -54,7 +54,7 @@ function mqttPublish(authTokenJwt) {
                     client.publish(mqttTopic, payload, {qos: 1});
                 });
                 return;
-            }, 5000);
+            }, config.interval);
         }
       });
 

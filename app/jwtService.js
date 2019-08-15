@@ -1,6 +1,13 @@
 const jwt = require('jsonwebtoken');
 const fs = require('fs')
 
+/**
+ * JWTを作成する
+ * @param projectId {string} - GCPのプロジェクトID
+ * @param privateKeyFile {string} - ローカルの秘密鍵パス
+ * @param algorithm {string} - 秘密鍵作成手法
+ * @reutrn jwt.sign
+ */
 function createJwt(projectId, privateKeyFile, algorithm) {
     // Create a JWT to authenticate this device. The device will be disconnected
     // after the token expires, and will have to reconnect with a new token. The

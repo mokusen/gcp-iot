@@ -1,0 +1,13 @@
+{
+    "cloudRegion": "",
+    "projectId": "",
+    "registryId": "",
+    "deviceId": "",
+    "privateKeyFile": "",
+    "algorithm": "RS256",
+    "tokenExpMins": 20,
+    "mqttBridgeHostname": "mqtt.googleapis.com",
+    "mqttBridgePort": 8883,
+    "messageType": "events",
+    "interval": 10000
+}
